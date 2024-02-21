@@ -1,1 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Real-world Affective Faces (RAF) Database</title>
+
+<style type="text/css">
+body,td,th {
+    font-size: 16px;
+}
+body {
+    border: 2px rgba(255,255,255,.38) solid;
+    border-radius: 4px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 18px;
+}
+pre {  
+font-size: 12pt;  
+background-color: #fffff4;  
+border: 1px solid #999;
+line-height: 20px; 
+}
+</style>
+</head>
+
+<body>
+  <div id="content">
+    <div id="content-inner">
+      <div class="section head">
+    <h1><font size="7"><center>A Vision-Driven Multi-Modal Dataset for Emotion-Aware Takeover Performance Understanding in Autonomous Driving</center></font></h1>
+    <font size="6" color="#0000CC"><center><a href="#dataset">ViE-Take</a></center></font>
+  </div><br>
+
+      <div class="show">
+        <center><img src="overview_2.png" border="0" width="60%">
+        </center>
+      </div><br>
+
+      <div class="section details">
+      <a id="dataset"></a>
+        <h2><font face="Tahoma">Abstract</font><br></h2>
+    <!-- <p><b>Real-world Affective Faces Database (RAF-DB)</b> is a large-scale facial expression database with around <b>30K</b> great-diverse facial images downloaded from the Internet. Based on the crowdsourcing annotation, each image has been independently labeled by about <b>40</b> annotators. Images in this database  are of great variability in subjects' age, gender and ethnicity, head poses, lighting conditions, occlusions, (e.g. glasses, facial hair or self-occlusion), post-processing operations (e.g. various filters and special effects), etc. RAF-DB has large diversities, large quantities, and rich annotations, including:</p> -->
+    <p>Takeover safety draws increasing attention with the development of autonomous driving. Despite recent studies revealing the significance of emotions in takeover performance, the absence of emotion-aware datasets for takeover performance perception hinders their further exploration and potential applications, like performance prediction. To this end, we present ViE-Take, the first <b>Vi</b>sion-driven dataset for the <b>E</b>motion<b>-</b>aware <b>Take</b>over performance perception. <b>ViE-Take</b> facilitates holistic understanding of emotions in takeover performance from three distinctive aspects, including multi-source emotion elicitation, multi-modal data of face, eye, head as well as vehicle, and multi-dimensional annotations of emotions and takeover behaviors. Our preliminary analysis and experiments on ViE-Take finds that <b>Facial expression</b> is important in predicting takeover performance. The project is available on \textit{https://github.com/xxx/ViE-Take}.</p>
+    <ul>
+    <li><p><b>21</b> number of <b>participants (12 males & 9 females)</b>,</p></li>
+    <li><p><b>Multi-source emotion elicitation (video-audio clips)</b>: HANV, HAPV, LANV, LAPV </p></li>
+    <li><p><b>Multi-modal driver data</b>: Facial expression, Eye movement, Body posture, Head pose, Vehicle data from recorded driving video</p></li>
+    <li><p><b>Multi-dimensional annotations on emotional state</b>: Valence and Arousal vector for each driving video </p></li>
+    <li><p><b>Multi-dimensional annotations on takeover behaviors</b>: Readiness, Reaction time, and Takeover Performance </p></li>
+    <li><p><b>baseline</b> classifier outputs for takeover performance predction: 2D, 2D + timing, 2D + Timing + Attention and 3D</p></li>
+    <!-- <li> -->
+      <!-- <p>Facial expression: <b>Valence</b> and <b>Arousal</b> vector for each image-series,</p></li> -->
+    <!-- <li><p>two different subsets: <b>single-label subset</b>, including <b>7</b> classes of basic emotions; <b>two-tab subset</b>, including <b>12</b> classes of compound emotions,</p></li> -->
+    <!-- <li> -->
+      <!-- <p><b>5 accurate landmark locations</b>, <b>37 automatic landmark locations</b>, <b>bounding box</b>, <b>race, age range</b> and  <b>gender</b> <b> attributes</b> annotations per image,</p></li> -->
+    <!-- <li><p><b>baseline</b> classifier outputs for basic emotions and compound emotions.</p></li> -->
+    </ul>
+    <!-- To be able to objectively measure the performance for
+the followers' entries, the database has been split into a training set and a test set where the size of training set is five times larger than test set, and expressions in both sets have a near-identical distribution. -->
+ </div><br>
+    
+      <div class="section overview">
+      <h2><font face="Tahoma">Sample Images</font></h2><br>
+    <center><img src="dataset_2.png" border="0" width="70%">
+</center>
+</div><br>
+The recorded driving video is processed to extract multi-modal data, including face, eye movement, body posture, and head pose. Various information types are utilized to provide rich data resources for downstream takeover performance prediction tasks. 
+</div><br>
+**For more details of the dataset, please refer to the paper "<a href="ViE_Take.pdf" target="_blank">A Vision-Driven Multi-Modal Dataset for Emotion-Aware Takeover Performance Understanding in Autonomous Driving</a>".
+</div><br>
+
+ <div class="section contact">
+       <h2><font face="Tahoma">Terms & Conditions</font></h2>
+    <ul>
+    <li><p>The ViE-Take database is available for <b>non-commercial research purposes</b> only.</p></li>
+    <!-- <li><p>All images of the ViE-Take database are obtained from the Internet which are not property of PRIS, Beijing University of Posts and Telecommunications. The PRIS is not responsible for the content nor the meaning of these images.</p></li> -->
+    <li><p>You agree <b>not to</b> reproduce, duplicate, copy, sell, trade, resell or exploit for any commercial purposes, any portion of the images and any portion of derived data.</p></li>
+    <li><p>You agree <b>not to</b> further copy, publish or distribute any portion of the ViE-Take database. Except, for internal use at a single site within the same organization it is allowed to make copies of the dataset.</p></li>
+    <li><p>The PRIS reserves the right to terminate your access to the ViE-Take database at any time.</p></li>
+</ul>
+    </div><br>
+    
+        <div class="password">
+      <h2><font face="Tahoma"> How to get the Dataset</font> </h2>
+      This database is publicly available. It is free for professors and researcher scientists affiliated to a University.<br/>
+      Permission to use but not reproduce or distribute the ViE-Take database is granted to all researchers given that the following steps are properly followed:
+      <p>Send an email to Yantong Wang <a href="mailto:wangyantong912@mail.hfut.edu.cn">(email)</a> requesting the download link for the database. Your email MUST be sent from a valid University account and MUST include the following text:</p>
+      <!-- For downloading AffectNet, Only Lab Managers or Professors can request AffectNet by downloading and completing and signing The LICENSE AGREEMENT FILE. Once the agreement is completed, use the following form to submit your request. Make sure you attach the agreement file to the form.
+      AffectNet Request form is HERE . -->
+
+<pre>
+<b>Subject</b>: Application to download the ViE-Take Database          
+<b>Name</b>: &lt;your first and last name&gt;
+<b>Affiliation</b>: &lt;University where you work&gt;
+<b>Position</b>: &lt;your job title&gt;
+<b>Email</b>: &lt;must be the email at the above mentioned institution&gt;<br />
+I have read and agree to the terms and conditions specified in the ViE-Take face database webpage. 
+This database will only be used for research purposes. 
+I will not make any part of this database available to a third party. 
+I'll not sell any part of this database or make any profit from its use.</pre>
+      
+      
+        </div><br>
+
+      <div class="section download">
+      <!-- <h2><font face="Tahoma">Content Preview</font></h2>
+      <ul>             
+           <li class="grid">
+          <div class="griditem">
+<h3><b>Single-label Subset</b> (Basic emotions)</h3>
+      
+          <table>
+            <tr>
+          <td><center><img src="icon_zip.png" border="0" width="30%"></a></center></td>
+          <td><center><img src="icon_zip.png" border="0" width="30%"></a></center></td>
+           <td><center><img src="icon_txt.png" border="0" width="30%"></a></center></td>
+          <td><center><img src="icon_txt.png" border="0" width="30%"></a></center></td>
+          </tr>
+          <tr>
+          <td><center>
+          Image
+          </center></td>
+          <td><center>Annotation</center></td>          
+          <td><center>Emotion Label</center></td> 
+          <td><center>READ ME</center></td>
+          </tr>
+        </table>
+ </div>
+ </li>
+ </ul>                       
+<br>
+
+ <ul>             
+           <li class="grid">
+          <div class="griditem">
+            <h3>Two-tab Subset (Compound emotions)</h3>
+          <table>
+          <tr>
+          <td><center><img src="icon_zip.png" border="0" width="30%"></a></center></td>
+          <td><center><img src="icon_zip.png" border="0" width="30%"></a></center></td>
+          <td><center><img src="icon_txt.png" border="0" width="30%"></a></center></td>
+          <td><center><img src="icon_txt.png" border="0" width="30%"></a></center></td>
+          </tr>
+          <tr>
+          <td><center>
+          Image
+          </center></td>
+          <td><center>Annotation</center></td>          
+          <td><center>Emotion Label</center></td> 
+          <td><center>READ ME</center></td>
+          </tr>
+          </table>
+ </div>
+ </li>
+ </ul> 
+ <p><br> -->
+   
+   
+   
+   <!-- <br> -->
+   <!-- * Please note that the RAF database is partially public. And the other 10k images are neither basic nor compound emotions which will be released afterwards. -->
+      </p>
+      </div>
+      <br>
+
+      
+    
+          <div class="section code">
+    <h2><font face="Tahoma">Code</font></h2>
+    
+    We have uploaded the configuration parameters of the DLP-CNN and the hyper-parameters of the trianing process. 
+    <br>
+    You can download it from <a href="caffe-expression.zip">here</a>.
+    </div>
+    <br>
+
+
+    <div class="section citation">
+    <h2><font face="Tahoma">Citation</font></h2>
+    <div class="section bibtex">
+      <!-- <pre>@inproceedings{li2017reliable,
+title={Reliable Crowdsourcing and Deep Locality-Preserving Learning for Expression Recognition in the Wild},
+author={Li, Shan and Deng, Weihong and Du, JunPing},
+booktitle={2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+pages={2584--2593},
+year={2017},
+organization={IEEE}
+}</pre>   -->
+
+      <pre>@ARTICLE{10298005,
+author={Wang, Yantong and Gu, Yu and Ren, Fuji},
+journal={IEEE Communications Magazine}, 
+title={Emotion-Aware Takeover Performance Prediction System in Semi-Autonomous Driving}, 
+year={2023},
+volume={61},
+number={10},
+pages={70-75},
+keywords={Deep learning;Surveys;Visualization;Wheels;Software;Regulation;Safety;Autonomous driving},
+doi={10.1109/MCOM.001.2200852}
+}</pre>  
+    </div>
+    </div>
+    <br>
+    
+     <!-- <div class="section related work">
+    <h2><font face="Tahoma">Related Work</font></h2> -->
+
+    <!-- The following papers have employed RAF-DB for facial expression recognition.
+    <br><br>
+    <ul>
+    <li>Zeng, Jiabei, Shiguang Shan, and Xilin Chen. "Facial Expression Recognition with Inconsistently Annotated Datasets." <i>Proceedings of the European Conference on Computer Vision (ECCV)</i>. 2018.</li>
+    <li>Vielzeuf, Valentin, et al. "An Occam's Razor View on Learning Audiovisual Emotion Recognition with Small Training Sets." <i>Proceedings of the 2018 on International Conference on Multimodal Interaction. ACM</i>, 2018.</li>
+    <li>Khan, Ahmed Shehab, et al. "Group-Level Emotion Recognition using Deep Models with A Four-stream Hybrid Network." <i>Proceedings of the 2018 on International Conference on Multimodal Interaction. ACM</i>, 2018.</li>
+    <li>Zhiwen Liu, Shan Li, and Weihong Deng. "Boosting-POOF: Boosting Part Based One vs One Feature for Facial Expression Recognition in the Wild", in <i>The 2nd International Workshop on Biometrics in the Wild (BWild),</i> 2017.</li>
+    <li>Zhiwen Liu, Shan Li, and Weihong Deng. "Real-World Facial Expression Recognition Using Metric Learning Method", in <i>Chinese Conference on Biometric Recognition (CCBR),</i> 2016.</li>
+     <li>Zhiwen Liu, Shan Li, and Weihong Deng. "Recognizing Compound Emotional Expression in Real-world using Metric Learning Method", in <i>Chinese Conference on Biometric Recognition (CCBR),</i> 2016.</li>
+     <li>Shan Li and Weihong Deng. "Real world expression recognition: A highly imbalanced detection problem", in <i>9th IAPR International Conference on Biometrics (ICB)</i>, 2016</li>
+     <li>... ...</li>
+</ul>
+</div><br> -->
+
+     <div class="section contact">
+    <h2><font face="Tahoma">Contact</font></h2>
+    
+    Please contact <a href="mailto:wangyantong912@mail.hfut.edu.cn">Yantong Wang</a> and <a href="mailto:whdeng@bupt.edu.cn">Yu Gu</a> for questions about the database.
+    </div><br>
+</div></div>
+</body></html>
 
