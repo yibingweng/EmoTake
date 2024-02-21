@@ -29,7 +29,7 @@ line-height: 20px;
     <div id="content-inner">
       <div class="section head">
     <h1><font size="7"><center>EmoTake: Exploring Drivers' Emotion for Takeover Behavior Prediction</center></font></h1>
-    <font size="6" color="#0000CC"><center><a href="#dataset">EmoTake</a></center></font>
+<!--     <font size="6" color="#0000CC"><center><a href="#dataset">EmoTake</a></center></font> -->
   </div><br>
 
       <div class="show">
@@ -42,12 +42,12 @@ line-height: 20px;
         <h2><font face="Tahoma">Abstract</font><br></h2>
     <p>The blossoming semi-automated vehicles allow drivers to engage in various non-driving-related tasks, which may stimulate diverse emotions, thus affecting takeover safety. Though the effects of emotion on takeover behavior have recently been examined, how to effectively obtain and utilize drivers’ emotions for predicting takeover behavior remains largely unexplored. We propose EmoTake, a deep learning-empowered system that explores drivers’ emotional and physical states to predict takeover readiness, reaction time, and quality. The key enabler is a deep neural framework that extracts drivers’ fine-grained body movements from a camera and interprets them into drivers’ multi-channel emotional and physical information (e.g., facial expression, heart rate, and head pose) for prediction. Our study (N = 26) verifies the efficiency of EmoTake and shows that: 1) facial expression benefits prediction; 2) emotions have diverse impacts on takeovers. Our findings provide insights into takeover prediction and in-vehicle emotion regulation.</p>
     <ul>
-    <li><p><b>21</b> number of <b>participants (12 males & 9 females)</b>,</p></li>
+<!--     <li><p><b>21</b> number of <b>participants (12 males & 9 females)</b>,</p></li>
     <li><p><b>Multi-source emotion elicitation (video-audio clips)</b>: HANV, HAPV, LANV, LAPV </p></li>
     <li><p><b>Multi-modal driver data</b>: Facial expression, Eye movement, Body posture, Head pose, Vehicle data from recorded driving video</p></li>
     <li><p><b>Multi-dimensional annotations on emotional state</b>: Valence and Arousal vector for each driving video </p></li>
     <li><p><b>Multi-dimensional annotations on takeover behaviors</b>: Readiness, Reaction time, and Takeover Performance </p></li>
-    <li><p><b>baseline</b> classifier outputs for takeover performance predction: 2D, 2D + timing, 2D + Timing + Attention and 3D</p></li>
+    <li><p><b>baseline</b> classifier outputs for takeover performance predction: 2D, 2D + timing, 2D + Timing + Attention and 3D</p></li> -->
     <!-- <li> -->
       <!-- <p>Facial expression: <b>Valence</b> and <b>Arousal</b> vector for each image-series,</p></li> -->
     <!-- <li><p>two different subsets: <b>single-label subset</b>, including <b>7</b> classes of basic emotions; <b>two-tab subset</b>, including <b>12</b> classes of compound emotions,</p></li> -->
@@ -60,16 +60,21 @@ the followers' entries, the database has been split into a training set and a te
  </div><br>
     
       <div class="section overview">
-      <h2><font face="Tahoma">Sample Images</font></h2><br>
-    <center><img src="dataset_2.png" border="0" width="70%">
-</center>
-</div><br>
-The recorded driving video is processed to extract multi-modal data, including face, eye movement, body posture, and head pose. Various information types are utilized to provide rich data resources for downstream takeover performance prediction tasks. 
-</div><br>
-**For more details of the dataset, please refer to the paper "<a href="ViE_Take.pdf" target="_blank">A Vision-Driven Multi-Modal Dataset for Emotion-Aware Takeover Performance Understanding in Autonomous Driving</a>".
-</div><br>
+      <h2><font face="Tahoma">Database Detail</font></h2><br>
+<!--         <center><img src="dataset_2.png" border="0" width="70%"></center> -->
+<!--         </div><br>
+        The recorded driving video is processed to extract multi-modal data, including face, eye movement, body posture, and head pose. Various information types are utilized to provide rich data resources for downstream takeover performance prediction tasks. 
+        </div><br> -->
+        <li><p><b>21</b> number of <b>participants (12 males & 9 females)</b>,</p></li>
+        <li><p><b>Multi-source emotion elicitation (video-audio clips)</b>: HANV, HAPV, LANV, LAPV </p></li>
+        <li><p><b>Multi-modal driver data</b>: Facial expression, Eye movement, Body posture, Head pose, Vehicle data from recorded driving video</p></li>
+        <li><p><b>Multi-dimensional annotations on emotional state</b>: Valence and Arousal vector for each driving video </p></li>
+        <li><p><b>Multi-dimensional annotations on takeover behaviors</b>: Readiness, Reaction time, and Takeover Performance </p></li>
+        <li><p><b>baseline</b> classifier outputs for takeover performance predction: 2D, 2D + timing, 2D + Timing + Attention and 3D</p></li>
+        **For more details of the dataset, please refer to the paper "<a href="ViE_Take.pdf" target="_blank">A Vision-Driven Multi-Modal Dataset for Emotion-Aware Takeover Performance Understanding in Autonomous Driving</a>".
+        </div><br>
 
- <div class="section contact">
+     <div class="section contact">
        <h2><font face="Tahoma">Terms & Conditions</font></h2>
     <ul>
     <li><p>The ViE-Take database is available for <b>non-commercial research purposes</b> only.</p></li>
@@ -77,10 +82,10 @@ The recorded driving video is processed to extract multi-modal data, including f
     <li><p>You agree <b>not to</b> reproduce, duplicate, copy, sell, trade, resell or exploit for any commercial purposes, any portion of the images and any portion of derived data.</p></li>
     <li><p>You agree <b>not to</b> further copy, publish or distribute any portion of the ViE-Take database. Except, for internal use at a single site within the same organization it is allowed to make copies of the dataset.</p></li>
     <li><p>The PRIS reserves the right to terminate your access to the ViE-Take database at any time.</p></li>
-</ul>
+    </ul>
     </div><br>
     
-        <div class="password">
+    <div class="password">
       <h2><font face="Tahoma"> How to get the Dataset</font> </h2>
       This database is publicly available. It is free for professors and researcher scientists affiliated to a University.<br/>
       Permission to use but not reproduce or distribute the ViE-Take database is granted to all researchers given that the following steps are properly followed:
