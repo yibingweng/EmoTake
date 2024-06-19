@@ -14,7 +14,12 @@ For more detailed baseline information, please refer to [iTransformer](https://g
 If you find our work helpful, please consider citing the following papers.
 
 ```
-@article{
+@article{gu2024emotake,
+  title={EmoTake: Exploring Drivers' Emotion for Takeover Behavior Prediction},
+  author={Gu, Yu and Weng, Yibing and Wang, Yantong and Wang, Meng and Zhuang, Guohang and Huang, Jinyang and Peng, Xiaolan and Luo, Liang and Ren, Fuji},
+  journal={IEEE Transactions on Affective Computing},
+  year={2024},
+  publisher={IEEE}
 }
 ```
 
