@@ -159,17 +159,11 @@ def get_data(pred_type):
     au_data = np.load('DATA/aus.npy').transpose(0, 2, 1)
     em_data = np.load('DATA/ems.npy').transpose(0, 2, 1)
     hp_data = np.load('DATA/hps.npy').transpose(0, 2, 1)
-    hr_data = np.load('DATA/hrs.npy')
-
-    df = pd.DataFrame(hr_data)
-    df.fillna(0, inplace=True)
-    hr_data = np.array(df)
-    hr_data =hr_data.reshape(hr_data.shape[0], hr_data.shape[1], 1).transpose(0, 2, 1)
 
     bp_data = np.load('DATA/bps.npy')
     bp_data = bp_data.reshape(bp_data.shape[0], bp_data.shape[1], -1).transpose(0, 2, 1)
 
-    combine_data =np.column_stack((au_data, em_data, hp_data, hr_data, bp_data))    # person_num * seq_num * seq_len(300)
+    combine_data =np.column_stack((au_data, em_data, hp_data, bp_data))    # person_num * seq_num * seq_len(300)
 
     quality_label = np.load('DATA/quality.npy', allow_pickle=True)
     quality_label = np.array(quality_label, dtype=int)
