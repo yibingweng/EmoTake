@@ -1,15 +1,14 @@
 Data description:
 
-  Au: Action Units
+Au: Action Units
 
-  Bp: Body Posture
+Bp: Body Posture
 
-  Em: Eye movements
+Em: Eye movements
 
-  Hp: Head Posture
+Hp: Head Posture
 
-  Hr: Heart Rate
 
-To facilitate the processing, we use the tool to extract the features from our collection video. The action units, head postures, and eye movements are extracted by Openface 2.0, and Openpose extracts the body postures. 
+We use the tool to extract the features from our collection video to facilitate the processing. The action units, head postures, and eye movements are extracted by Openface 2.0, and Openpose extracts the body postures. 
 
-Each modality includes 195 samples (we collate our dataset again, and finally choose 24 participants' data (24 people * 3 times * 4 quadrants), and deleting the data located in the axis).
+Each modality includes 195 samples (we collate our dataset again, and finally choose 24 participants' data (24 people * 3 times * 4 quadrants), and delete the data located in the axis).
